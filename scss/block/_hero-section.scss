@@ -1,0 +1,95 @@
+.hero-section {
+    background-image: url("../Images/hero-bg.png");
+    background-repeat: no-repeat;
+    background-size: 100% 587px;
+    padding-bottom: 240px;
+    position: relative;
+}
+.hero-section::after{
+    content: " ";
+    background-image: url("../Images/hero-bg1.svg");
+    background-repeat: no-repeat;
+    background-size: 697px 649px;
+    top: -137px;
+    left: 1100px;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    position: absolute;
+}
+.hero-section::before{
+    content: " ";
+    background-image: url("../../Images/hero-bg2.png");
+    background-repeat: no-repeat;
+    background-size: 697px 649px;
+    top: 405px;
+    left: -500px;
+    bottom: 0;
+    right: 0;
+    // z-index: 1;
+    position: absolute;
+}
+.hero{
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    position: relative;
+}
+.hero__content {
+    width: 531px;
+    padding: 105px 0 127px;
+}
+.hero__line {
+    width: 150px;
+    height: 1px;
+    margin-bottom: 63px;
+    display: inline-block;
+    background-color: #FFF;
+}
+.hero__title {
+    margin-bottom: 16px;
+    color: #FFF;
+    font-family: DM Serif Display , serif;
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 64px; /* 88.889% */
+    letter-spacing: -1px;
+}
+.hero__wrap{
+    width: 540px;
+    margin-bottom: 24px;
+}
+.hero__text {
+    color: #FFF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px; /* 162.5% */
+}
+.hero__link {
+    width: 146px;
+    padding: 13px 0 13px;
+    display: inline-block;
+    border: 1.5px solid #FFF;
+    color: #FFF;
+    text-align: center;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.5px;
+    transition: all 0.4s linear;
+    &:hover{
+        columns: green;
+        border: 2px solid green ;
+    }
+    &:active{
+        color: #2C2830;
+        border: 1.5px solid #FFF;
+        background-color: #FFF;
+    }
+}
+.hero__img{
+    margin-top: 105px;
+}
