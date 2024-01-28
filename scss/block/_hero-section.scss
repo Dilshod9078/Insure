@@ -1,8 +1,8 @@
 .hero-section {
+    padding-bottom: 240px;
     background-image: url("../Images/hero-bg.png");
     background-repeat: no-repeat;
     background-size: 100% 587px;
-    padding-bottom: 240px;
     position: relative;
 }
 .hero-section::after{
@@ -23,10 +23,9 @@
     background-repeat: no-repeat;
     background-size: 697px 649px;
     top: 405px;
-    left: -500px;
+    left: -513px;
     bottom: 0;
     right: 0;
-    // z-index: 1;
     position: absolute;
 }
 .hero{
@@ -82,11 +81,11 @@
     transition: all 0.4s linear;
     &:hover{
         columns: green;
-        border: 2px solid green ;
+        border-color:  green ;
     }
     &:active{
         color: #2C2830;
-        border: 1.5px solid #FFF;
+        border-color:  #FFF;
         background-color: #FFF;
     }
 }
